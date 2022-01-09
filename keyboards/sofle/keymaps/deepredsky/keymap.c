@@ -19,19 +19,18 @@
 #include "oled.c"
 #include "encoder.c"
 
-#define TAPPING_TERM 200
+// #define TAPPING_TERM 200
+#define IGNORE_MOD_TAP_INTERRUPT
 
 // Left-hand home row mods
-#define SFT_A LSFT_T(KC_A)
-#define CTL_O LCTL_T(KC_O)
-#define GUI_E LGUI_T(KC_E)
-#define ALT_U LALT_T(KC_U)
+#define MOD_CTL_Q LCTL_T(KC_Q)
+#define MOD_GUI_J LGUI_T(KC_J)
+#define MOD_ALT_K LALT_T(KC_K)
 
 // Right-hand home row mods
-#define ALT_H LALT_T(KC_H)
-#define GUI_T RGUI_T(KC_T)
-#define CTL_N RCTL_T(KC_N)
-#define SFT_S RSFT_T(KC_S)
+#define MOD_ALT_M RALT_T(KC_M)
+#define MOD_GUI_W RGUI_T(KC_W)
+#define MOD_CTL_V RCTL_T(KC_V)
 
 //Default keymap. This can be changed in Via. Use oled.c and encoder.c to change beavior that Via cannot change.
 
@@ -39,8 +38,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(
                        KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                                               KC_6,     KC_7,   KC_8,     KC_9,    KC_0,  KC_BSPC,
                        KC_ESC,   KC_QUOT,  KC_COMM,  KC_DOT,   KC_P,     KC_Y,                                               KC_F,     KC_G,   KC_C,     KC_R,    KC_L,  KC_SLSH,
-                      KC_TAB,   SFT_A,    CTL_O,    GUI_E,    ALT_U,    KC_I,                                               KC_D,     ALT_H,  GUI_T,    CTL_N,   SFT_S,  KC_BSLS,
-                       KC_LSFT,  KC_SCLN,  KC_Q,     KC_J,     KC_K,     KC_X,    KC_MUTE,                           KC_NO,  KC_B,     KC_M,    KC_W,  KC_V,     KC_Z,  KC_RSFT,
+                      KC_TAB,   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                                               KC_D,     KC_H,  KC_T,    KC_N,   KC_S,  KC_BSLS,
+                       KC_LSFT,  KC_SCLN,  MOD_CTL_Q,     MOD_GUI_J,  MOD_ALT_K,  KC_X,    KC_MUTE,                           KC_NO,  KC_B,     MOD_ALT_M,    MOD_GUI_W,  MOD_CTL_V,     KC_Z,  KC_RSFT,
                                         MO(1),    KC_RALT,  KC_LALT,  KC_LCTL,  KC_LGUI,                           KC_ENT,  KC_SPC,   MO(2),  KC_LBRC,  KC_RBRC
 ),
 
