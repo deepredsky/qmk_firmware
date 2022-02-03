@@ -15,17 +15,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y,                                       KC_F, KC_G, KC_C, KC_R, KC_L, KC_SLSH,
              KC_ESC, KC_A, KC_O, KC_E, KC_U, KC_I,                                           KC_D, KC_H, KC_T, KC_N, KC_S, KC_BSLS,
       KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X, KC_MUTE,                                 KC_NO, KC_B, KC_M, KC_W, KC_V, KC_Z, KC_RSFT,
-           KC_GRV, KC_LALT, MO(1), KC_LCTL, KC_LGUI,                                        KC_ENT, KC_SPC, KC_RGUI, MO(2), KC_LBRC
+           KC_GRV, MO(1), KC_LALT, KC_LCTL, KC_LGUI,                                        KC_ENT, KC_SPC, MO(2), KC_RGUI, KC_LBRC
       ),
   [1] = LAYOUT(
-               KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,                                                     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_DEL,
+               KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,                                                     KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_BSPC,
                   KC_TRNS, KC_1, KC_2, KC_3, KC_4, KC_5,                                                    LALT(KC_F), KC_GRV, KC_UP, KC_TILD, KC_0, KC_TRNS,
             KC_TRNS, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC,                                            KC_CIRC, KC_LEFT, KC_DOWN, KC_RGHT, KC_RPRN, KC_TRNS,
       KC_TRNS, KC_EQL, KC_MINS, KC_PLUS, KC_LCBR, KC_RCBR, KC_TRNS,                                 KC_TRNS, LALT(KC_B), KC_LBRC, KC_RBRC, KC_LCBR, KC_RCBR, KC_TRNS,
                KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                                                     KC_TRNS, MO(4), KC_TRNS, KC_TRNS, KC_TRNS
       ),
   [2] = LAYOUT(
-         KC_EQL, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+         KC_EQL, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_DEL,
               KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_PGUP, LCTL(KC_LEFT), KC_UP, LCTL(KC_RGHT), LCTL(KC_BSPC), KC_BSPC,
       KC_TRNS, KC_NO, KC_NO, LGUI(KC_TAB), LGUI(KC_TILD), KC_NO,                                          KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_DEL, KC_BSPC,
          KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,                                           KC_TRNS, KC_NO, KC_HOME, KC_NO, KC_END, KC_NO, KC_TRNS,
